@@ -23,12 +23,12 @@ The following package needs to install before running this package.
 pip install fuzzychinese
 ```
 
-[rapidfuzz]([https://github.com/znwang25/fuzzychinese](https://github.com/rapidfuzz/RapidFuzz))
+[rapidfuzz](https://github.com/rapidfuzz/RapidFuzz)
 ```bash
 pip install rapidfuzz
 ```
 
-[abydos]([[https://github.com/znwang25/fuzzychinese](https://github.com/rapidfuzz/RapidFuzz](https://github.com/chrislit/abydos)))
+[abydos](https://github.com/chrislit/abydos)
 ```bash
 pip install rapidfuzz
 ```
@@ -379,4 +379,4 @@ The code is licensed under the MIT/X license an extended version of the licence:
 
 
 ## Thanks
-Thanks to the work of implementing name matching algorithms done in the [Abydos package](https://github.com/chrislit/abydos),the base of this program [name-matching](https://github.com/DeNederlandscheBank/name_matching), contributors of [rapidfuzz]([https://github.com/znwang25/fuzzychinese](https://github.com/rapidfuzz/RapidFuzz)), and contributors of fuzzychinese[fuzzychinese](https://github.com/znwang25/fuzzychinese). These form the basis algorithms used in this package.
+Thanks to the work of implementing name matching algorithms done in the [Abydos package](https://github.com/chrislit/abydos),the base of this program [name-matching](https://github.com/DeNederlandscheBank/name_matching), contributors of [rapidfuzz](https://github.com/rapidfuzz/RapidFuzz), and contributors of fuzzychinese[fuzzychinese](https://github.com/znwang25/fuzzychinese). These form the basis algorithms used in this package.
