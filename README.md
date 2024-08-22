@@ -5,8 +5,11 @@ This is a forked repository from:
 [![name_matching](https://github.com/DeNederlandscheBank/name_matching/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/DeNederlandscheBank/name_matching/actions/workflows/python-app.yml)
 
 This is a package that use to match company names in your database. You should be providing:
+
         - a database that has all company names, including its aliases if possible.
+        
         - a search string that use to match the user input
+        
 This package only supports any alphabetical language and Chinese, please make sure to not contain any other language in the database.
 When the package detect the user input is in Chinese, the program will automatically use fuzzychinese to match the name. 
 When the package detect the user input is in English, the program will automatically use name_matching to match the name. 
@@ -40,8 +43,11 @@ pip install git+https://github.com/DanielCGL/name_matching_for_company.git
 ## Pre-Run
 
 Before running the usage code, user should have a jsonl file that contains the following information:
+
         - requiredSearchStrings for the string matches with the user_input and,
+        
         - the correspond companyName for output
+        
 For Example:
 ```bash
 {"requiredSearchStrings":["apples","apple","苹果","itunes"],"aliases":["iTunes","Apple's","Apple","苹果公司"],"companyName":"Apple Inc."}
