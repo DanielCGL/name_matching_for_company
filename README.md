@@ -53,6 +53,7 @@ For Example:
 
 
 ## Usage
+You may copy the following code, update your jsonl file, input the name you want to search.
 ```python
 #!pip install fuzzychinese
 #!pip install git+https://github.com/DanielCGL/name_matching_for_company.git
