@@ -7,7 +7,6 @@ This is a forked repository from:
 This is a package that use to match company names in your database. You should be providing:
 
         - a database that has all company names, including its aliases if possible.
-        
         - a search string that use to match the user input
         
 This package only supports any alphabetical language and Chinese, please make sure to not contain any other language in the database.
@@ -45,7 +44,6 @@ pip install git+https://github.com/DanielCGL/name_matching_for_company.git
 Before running the usage code, user should have a jsonl file that contains the following information:
 
         - requiredSearchStrings for the string matches with the user_input and,
-        
         - the correspond companyName for output
         
 For Example:
@@ -357,19 +355,28 @@ else:
         print("没有匹配到相应的公司名称")
 ```
 
-
 Output:
 
-user_input: Alibaba
+user_input: Apple
 
-output:alibaba.com(this is by the database I have)
+output: Apple.lnc.*
+
+user_input: 苹果
+
+output: Apple.lnc.*
+
+* = output search by my database
+
+Not only it will output you the matching company, it will also output you two csv files, these two files are your database separated with chinese search string and english search string data.
 
 
 ## Contributing
 All contributions are welcome. For more substantial changes, please open an issue first to discuss what you would like to change.
 
+
 ## License
 The code is licensed under the MIT/X license an extended version of the licence: [MIT](https://choosealicense.com/licenses/mit/)
 
+
 ## Thanks
-Thanks to the work of implementing name matching algorithms done in the [Abydos package](https://github.com/chrislit/abydos),the base of this program [name-matching](https://github.com/DeNederlandscheBank/name_matching), and contributors of fuzzychinese[fuzzychinese](https://github.com/znwang25/fuzzychinese). These form the basis algorithms used in this package.
+Thanks to the work of implementing name matching algorithms done in the [Abydos package](https://github.com/chrislit/abydos),the base of this program [name-matching](https://github.com/DeNederlandscheBank/name_matching), contributors of [rapidfuzz]([https://github.com/znwang25/fuzzychinese](https://github.com/rapidfuzz/RapidFuzz)), and contributors of fuzzychinese[fuzzychinese](https://github.com/znwang25/fuzzychinese). These form the basis algorithms used in this package.
