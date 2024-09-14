@@ -43,50 +43,6 @@ Remove the suffix "LLC."
 Tokenize the name if needed.
 Compare the cleaned name against its list of known companies and aliases (which includes "Google Inc.") and return the matching company name, "Google Inc."
 
-## Key Components
-1.Regular Expressions:
-
--ERASE_OR_REPLACE_TO_SPACE_SYMBOLS: Handles replacement of special characters (like slashes, exclamation points, etc.) with spaces.
-
--CIRCUMFLEX_PAIRS: Normalizes letters with accents, converting them into their simpler forms (e.g., é becomes e).
-
--REGEX_COMPANY_DROP_INVALID: Matches and removes invalid characters from company names (such as punctuation marks).
-
--COMPANY_COMMON_WORDS_REGEX: Matches common company words (like "research," "technology") in both English and Chinese, allowing their removal to standardize names.
-
--ORG_SUFFIX_REGEX: Matches common company suffixes (like "Ltd," "Inc.") and removes them to get a base name for better matching.
-
-2.Classes:
-
--NameNormalizer: Handles normalization of company names by removing special characters and converting accented letters to their base forms.
--CompanyMatcher:
-        A. This class is the core of the system, managing various steps like:
-                I. Tokenization: Uses Jieba to split Chinese text into tokens and handles mixed English-Chinese strings.
-                II. Normalization: Standardizes names by removing unwanted symbols, words, and company suffixes.
-                III.Matching: Matches the user-provided company name against preloaded company names and aliases using the NameMatcher algorithm.
-
-3.Preprocessing:
-
--company_words_regulator: Cleans and regulates company names by removing irrelevant suffixes (e.g., "Inc.," "Group") and common words (e.g., "Research," "Tech").
-
--interpunction_regulator: Removes or replaces symbols and punctuation in the company names for better matching.
-
--contains_chinese: Detects whether a string contains Chinese characters and applies specific processing accordingly.
-
-4.Data Preparation:
-
--prepare_matching_data: Organizes company data (including aliases and required search strings) into a format that can be used for matching.
-
--prepare_data_for_matching: Prepares company names by tokenizing and cleaning them before feeding into the matching process.
-
-5.Matching Logic:
-
--match_user_input: Takes a user-provided company name, normalizes and tokenizes it, then compares it against the company data to find a match. The matching score is used to determine if a match is valid.
-
-6.Main Function:
-
--main(): Initializes the system, loads the company data, prepares it for matching, and then takes user input to match against the preloaded company names. The result of the match (if any) is displayed to the user.
-
 
 ## Workflow
 1.Normalization:
