@@ -12,7 +12,7 @@ from name_matching.distance_metrics import make_distance_metrics
 from cleanco.termdata import terms_by_type, terms_by_country
 from name_matching.sparse_cosine import sparse_cosine_top_n
 
-
+#this is the base of name_matching_for_company
 class NameMatcher:
     """
     A class for the name matching of data based on the strings in a single column. The 
