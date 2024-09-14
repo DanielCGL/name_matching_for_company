@@ -28,7 +28,8 @@ For Example:
 
 
 ## Usage
-See Usage.py
+See [[usage.py](https://github.com/[username]/[repository]/blob/[branch]/path/to/usage.py
+)]
 
 
 ## Contributing
