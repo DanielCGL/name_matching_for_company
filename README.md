@@ -58,7 +58,8 @@ The cleaned and tokenized company name is matched against a preloaded list of co
 If the company name matches one of the known companies (or its aliases), the system returns the matched company name; otherwise, it returns an empty string.
 
 ## Performance
-![Figure_2 for precision vs recall](https://github.com/user-attachments/assets/216cdf11-1c34-43b2-a2aa-8f02255cff29)
+![Figure_2 for precision vs recall](https://github.com/user-attachments/assets/7b16c5b0-adee-439e-adcf-ccb0d969481f)
+
 
 
 ## Contributing
